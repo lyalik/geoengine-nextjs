@@ -1,0 +1,43 @@
+{
+    "name": "@geoengine/nextjs",
+    "version": "1.0.1",
+    "description": "GEO Engine bridge for Next.js (App Router) — SEO meta, JSON-LD, llms.txt, catalog mirror, managed files, self-update.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": "./dist/index.js",
+        "./route": "./dist/route.js",
+        "./meta": "./dist/meta.js",
+        "./store": "./dist/store.js"
+    },
+    "files": [
+        "dist",
+        "src",
+        "template",
+        "README.md",
+        "INSTALL.md"
+    ],
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "prepare": "npm run build",
+        "test": "tsc -p tsconfig.json && node --test test/"
+    },
+    "engines": {
+        "node": ">=18"
+    },
+    "dependencies": {
+        "adm-zip": "^0.5.16"
+    },
+    "peerDependencies": {
+        "next": ">=13.4"
+    },
+    "peerDependenciesMeta": {
+        "next": { "optional": true }
+    },
+    "license": "UNLICENSED",
+    "private": false,
+    "devDependencies": {
+        "typescript": "^5.4.0",
+        "@types/node": "^20.0.0"
+    }
+}
