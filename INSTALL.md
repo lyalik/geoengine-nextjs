@@ -13,7 +13,7 @@ JSON-LD, llms.txt, каталог, managed-файлы, self-update.
 ## Установка
 
 ```bash
-npm install @geoengine/nextjs
+npm install github:lyalik/geoengine-nextjs#v1.0.1
 ```
 
 или vendored: `unzip geoengine-nextjs.zip` → `"file:./geoengine-nextjs"`.
